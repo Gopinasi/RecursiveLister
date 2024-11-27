@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 
-public class Main {
+public class RecursiveLister {
     private JFrame frame;
     private JTextArea textArea;
     private JScrollPane scrollPane;
@@ -14,7 +14,7 @@ public class Main {
     public static void main(String[] args) {
         EventQueue.invokeLater(() -> {
             try {
-                Main window = new Main();
+                RecursiveLister window = new RecursiveLister();
                 window.frame.setVisible(true);
             } catch (Exception e) {
                 e.printStackTrace();
@@ -22,7 +22,7 @@ public class Main {
         });
     }
 
-    public Main() {
+    public RecursiveLister() {
         frame = new JFrame("Recursive Lister");
         frame.setBounds(100, 100, 400, 400);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
